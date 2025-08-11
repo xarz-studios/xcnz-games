@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Destroy | XcnZ </title>
+    <style>
+        canvas { background: #1A1A1A; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        // Simplified sci-fi Candy Crush logic
+        function draw() {
+            ctx.fillStyle = '#FF0000';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            // Add space objects, neon effects
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>
